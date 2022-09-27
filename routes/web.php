@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\PeminjamanController;
+use App\Models\Peminjaman;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +31,6 @@ Route::delete('/barang/{id_barang}/', [BarangController::class, 'destroy']);
 Route::get('/', function (){
     return view('layouts.master');      
 });     
+
+// peminjaman 
+Route::get('/peminjaman/pinjam', [PeminjamanController::class, 'pinjam']);
