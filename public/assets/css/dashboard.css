@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #E0F1FE;
+}
+
+.fContainer {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.wrapper {
+    height: 80px;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C3F8FF;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.059);
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    background-image: url(/assets/img/inven.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.wrapper ul h2{
+    color: #136678;
+}
+
+.kotak {
+    /* border: 5px solid orangered; */
+    display: flex;
+}
+
+
+.sidebar {
+    /* border: 1px solid red; */
+    width: 180px;
+    height: 600px;
+    background-color: #42C2FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sidebar ul {
+    height: 250px;
+    list-style: none;
+    /* border: 1px solid fuchsia; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.tabel-barang {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabel-barang h2 {
+    text-align: center;
+}
+
+.tabel-barang .button {
+    /* border: 2px solid red; */
+    width: 120px;
+    /* height: 30px; */
+    margin-left: 170px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: #367E18;
+    /* text-align: center; */
+}
+
+.tabel-barang .button a {
+    text-decoration: none;
+    color: white;
+}
+
+.tabel-barang .tabel {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.tabel-barang .tabel table {
+    width: 900px;
+    height: 200px;
+}
+
+.tabel-barang .tabel table td {
+    text-align: center;
+}
