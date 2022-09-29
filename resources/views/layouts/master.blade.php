@@ -24,8 +24,8 @@
                     
                 </div>
                 <ul>
-                    <li><a href="/barang/table_barang">Barang</a></li>
-                    <li><a href="/barang/table_barang">Peminjaman</a></li>
+                    <li><a href="/barang/tabel_barang">Barang</a></li>
+                    <li><a href="/peminjaman/pinjam">Peminjaman</a></li>
                     <li><a href="/barang/table_barang">Pengembalian</a></li>
                     <li><a href="/barang/table_barang">Masukkan Barang</a></li>
                 </ul>

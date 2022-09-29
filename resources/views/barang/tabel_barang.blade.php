@@ -2,7 +2,7 @@
 
 @section('content')
 
-<!-- @method('put') -->
+
 <div class="tabel-barang">
     <h2>TABEL BARANG</h2>
     <div class="button">
@@ -27,16 +27,17 @@
                 <td>{{$b->waktu}}</td>
                 <td>
                     <a href="/barang/{{$b->id_barang}}/edit">EDIT</a>
-                    <div action="/barang/{{$b->id_barang}}/" method="POST">
+                    <!-- <div action="/barang/{{$b->id_barang}}/" method="POST">
+                        @csrf
+                        @method('delete')
+                        <button type="submit">HAPUS</button>
+                        <input type="submit" value="hapus">
+                    </div> -->
+                    <form action="/barang/{{$b->id_barang}}/" method="POST">
                         @csrf
                         @method('delete')
                         <input type="submit" value="hapus">
-                    </div>
-                    <!-- <form action="/barang/{{$b->id_barang}}/" method="POST">
-                        @csrf
-                        @method('delete')
-                        <input type="submit" value="hapus">
-                    </form> -->
+                    </form>
                 </td>
             </tr>
             @endforeach
