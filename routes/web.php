@@ -63,3 +63,4 @@ Route::get('/dashboard', function (){
 
 // peminjaman 
 Route::get('/peminjaman/pinjam', [PeminjamanController::class, 'pinjam']);
+Route::post('/barang/store1', [BarangController::class, 'store1']);
