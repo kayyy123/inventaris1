@@ -91,7 +91,7 @@ form {
 
 form input {
     padding-left: 10px;
-    width: 300px;
+    width: 260px;
     height: 40px;
     border-radius: 10px;
     background-color: white;
@@ -154,3 +154,25 @@ label {
     background-size: cover;
     background-position: center;
 }   
+
+.container form .input-box .email {
+    background-image: url(/assets/icon/mail.png);
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.container form .input-box .password {
+    background-image: url(/assets/icon/padlock.png);
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.container form .input-box input:read-write {
+    padding-left: 50px;
+}

@@ -24,6 +24,13 @@ class UserData extends Seeder
                 'email' => 'admin@loraayang.com'
             ],
             [
+                'name' => 'Administrator',
+                'username' => 'admin',
+                'password' => bcrypt('admin321'),
+                'level' => 1,
+                'email' => 'admin@sabdayoga.com'
+            ],
+            [
                 'name' => 'Divisi',
                 'username' => 'divisi',
                 'password' => bcrypt('divisi123'),

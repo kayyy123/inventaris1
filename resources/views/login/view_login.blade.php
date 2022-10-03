@@ -22,11 +22,12 @@
             </div>
             <div class="input-box">
                 <label for="email">Email</label>
+                <i class="email"></i>
                 <input autofocus type="text" class="form-control
                         @error('email')  
                             is-invalid
                         @enderror
-                " name="email" placeholder='Masukan Email' value="{{ old('email') }}" maxlength="32" cellspacing="5px">
+                " name="email" placeholder="Masukan Email" maxlength="32" cellspacing="5px">
             </div>
             @error('email')
             <div class="invalid-feedback">
@@ -35,6 +36,7 @@
             @enderror
             <div class="input-box">
                 <label for="password">Password</label>
+                <i class="password"></i>
                 <input autofocus type="password" class="form-control
                         @error('password') 
                             is-invalid 
