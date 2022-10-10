@@ -5,7 +5,7 @@
 <div class="pinjam">
 <h2>PEMINJAMAN</h2>
 
-<form action="/peminjaman/store1" method="POST">
+<form action="/peminjaman/agreement" method="POST">
     @csrf
     <div class="input-box">
         <label>Nama Barang</label>

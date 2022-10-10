@@ -10,5 +10,5 @@ class Peminjaman extends Model
     use HasFactory;
     protected $table = 'peminjaman';
     protected $primaryKey = 'id_barang';
-    protected $sguarded = [];
+    protected $guarded = [];
 }

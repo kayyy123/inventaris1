@@ -15,8 +15,14 @@ class PeminjamanController extends Controller
     public function store1(Request $request)
     {
         // dd($request->except(['_token','submit']));
-        Peminjaman::create($request->except(['_token', 'submit']));
-        return redirect('/peminjaman/store1');
+        // Peminjaman::create($request->except(['_token', 'submit']));
+        return redirect('barang/agreement');
+    }
+
+    public function agreement()
+    {
+        // dd($request->except(['_token','submit']));
+        return view('peminjaman.agreement');
     }
 
 }

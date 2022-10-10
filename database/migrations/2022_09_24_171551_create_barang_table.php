@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id('id_barang');
             $table->string('nama_barang');
             $table->enum('katagori',['laptop','led_tv','printer','infocus']);
-            $table->string('quantity');
+            $table->integer('quantity');
             $table->string('asal_barang');
             $table->date('waktu');
             $table->timestamps();

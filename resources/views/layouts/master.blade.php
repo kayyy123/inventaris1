@@ -21,7 +21,7 @@
                 <div class="name">PT INVENTARIS GELORA GEMILANG</div>
             </div>
             <ul class="navigation">
-                <li><a href="body.html"><img src="/assets/icon/setting.png" alt=""></a></li>
+                <li><a href="body.html"><img src="/assets/icon/settings.png" alt=""></a></li>
             </ul>
         </nav>
         <div class="kotak">

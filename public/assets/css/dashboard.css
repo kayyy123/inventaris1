@@ -52,8 +52,8 @@ body {
 .navigation li a img {
     /* background-image: url(setting.png); */
     /* border: 1px solid red; */
-    width: 50px;
-    height: 50px;
+    width: 32px;
+    height: 32px;
 }
 
 .navigation>li {
@@ -196,17 +196,19 @@ body {
 
 .tabel-barang .button {
     /* border: 2px solid red; */
-    width: 120px;
-    /* height: 30px; */
+    width: 80px;
+    height: 30px;
     margin-left: 170px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    background-color: #367E18;
+    align-items: center;
+    background-color: #198754;
     /* text-align: center; */
 }
 
 .tabel-barang .button a {
+    /* align-items: center; */
     text-decoration: none;
     color: white;
 }
@@ -215,6 +217,7 @@ body {
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     /* align-items: center; */
 }
 
@@ -224,8 +227,100 @@ body {
 }
 
 .tabel-barang .tabel table td {
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabel-barang .tabel table td .button-edit {
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    width: 60px;
+    height: 25px;
+    background-color: #0D6EFD;
+    border-radius: 10px;
+}
+
+.tabel-barang .tabel table td .button-edit a {
+    color: white;
+    text-decoration: none;
+}
+
+.tabel-barang .tabel table td form {
+    /* border: 1px solid red; */
+    /* justify-content: center;
+    display: flex;
+    align-items: center; */
+    margin-bottom: 10px;
+}
+
+.tabel-barang .tabel table td form input {
+    /* border: 1px solid red; */
+    width: 60px;
+    height: 25px;
+    background-color: #DC3545;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.create {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.create h2 {
     text-align: center;
 }
+
+.create form {
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.create form input {
+    border: 0.5px solid black;
+    width: 900px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.create form input::placeholder {
+    font-style: italic;
+}
+
+.create form select {
+    border: 0.5 solid black;
+    width: 920px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+.create form button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    background-color: #2192FF;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
 
 .pinjam {
     /* border: 1px solid red; */
@@ -295,4 +390,30 @@ body {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.agree {
+    width: 90%;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+
+.agree h2 {
+    text-align: center;
+}
+
+.agree .setuju {
+    border: 1px solid red;
+    height: 500px;
+    width: 99.7%;
+    display: flex;
+    /* align-items: center; */
+    text-align: justify;
+    /* justify-content: center; */
+}
+
+.agree .setuju p {
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 25px;
 }
