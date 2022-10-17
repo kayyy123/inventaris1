@@ -15,7 +15,7 @@
             <option value="infocus">Infocus</option>
             <option value="printer">Printer</option>
         </select><br>
-        <input type="text" name="quantity" placeholder="Masukan Quantity"><br>
+        <input type="number" name="quantity" placeholder="Masukan Quantity"><br>
         <input type="text" name="asal_barang" placeholder="Masukan Asal Barang"><br>
         <input type="text" name="waktu" placeholder="Masukan Waktu"><br>
         <button type="submit" name="submit">SIMPAN</button>
