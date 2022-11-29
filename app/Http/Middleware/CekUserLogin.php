@@ -15,17 +15,17 @@ class CekUserLogin
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next, $rules)
+    public function handle(Request $request, Closure $next, $role)
     {
-        if (!Auth::check()) {
+        if (Auth::check()) {
             return redirect('login');
         }
 
-        $user = Auth::user(); {
-            if ($user->level == $rules)
+        $user = Auth::user(); 
+            if ($user->level == $role) {
                 return $next($request);
-        }
-
-        return redirect('login')->with('error', "Kamu Tidak Ada Akses Untuk Masuk");
+            }
+            
+                return redirect('login')->with('error', "Kamu Tidak Ada Akses Untuk Masuk");
     }
 }

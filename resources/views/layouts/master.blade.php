@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PT. INVENTARIS GELORA GEMILANG</title>
     <link rel="stylesheet" href="/assets\css/dashboard.css">
-
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
 </head>
 
@@ -33,15 +33,15 @@
                     </div>
                     <div class="list">
                         <i class="pinjam"></i>
-                        <li><a href="/peminjaman/pinjam">PEMINJAMAN</a></li>
+                        <li><a href="/peminjaman/agremeent">PEMINJAMAN</a></li>
                     </div>
                     <div class="list">
                         <i class="return"></i>
-                        <li><a href="/barang/table_barang">PENGEMBALIAN</a></li>
+                        <li><a href="/pengembalian/return">PENGEMBALIAN</a></li>
                     </div>
                     <div class="list">
                         <i class="laporan"></i>
-                        <li><a href="/barang/table_barang">LAPORAN</a></li>
+                        <li><a href="/laporan">LAPORAN</a></li>
                     </div>
                 </ul>
                 <div class="logout">

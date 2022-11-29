@@ -2,8 +2,9 @@
 
 @section('content')
 
+
 <div class="create">
-    <h2>TAMBAH BARANG</h2>
+    <h2>Pengembalian</h2>
 
     <form action="/barang/store" method="POST">
         @csrf
@@ -16,9 +17,10 @@
             <option value="printer">Printer</option>
         </select><br>
         <input type="number" name="quantity" placeholder="Masukan Quantity"><br>
-        <input type="text" name="asal_barang" placeholder="Masukan Asal Barang"><br>
         <button type="submit" name="submit">SIMPAN</button>
     </form>
 </div>
+
+
 
 @endsection

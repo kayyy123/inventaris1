@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Models\Peminjaman;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\LayoutsController;
 use App\Http\Controllers\PeminjamanController;
+use App\Http\Controllers\PengembalianController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,38 +33,30 @@ Route::controller(LoginController::class)->group(function () {
 
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['cekUserLogin:1']], function () {
-        Route::resource('beranda', LayoutsController::class);
+        Route::resource('admin', AdminController::class);
     });
     Route::group(['middleware' => ['cekUserLogin:2']], function () {
         Route::resource('kasir', KasirController::class);
     });
 });
 
-// layouts
-// Route::get('/barang/tabel_barang', [LayoutsController::class, 'tabel_barang']);
-
 // barang
-Route::get('/barang/tabel_barang', [BarangController::class, 'tabel_barang']);
-Route::get('/barang/create', [BarangController::class, 'create']);
-Route::post('/barang/store', [BarangController::class, 'store']);
-Route::get('/barang/{id_barang}/edit', [BarangController::class, 'edit']);
-Route::put('/barang/{id_barang}/', [BarangController::class, 'update']);
-Route::delete('/barang/{id_barang}/', [BarangController::class, 'destroy']);
+Route::get('/barang/tabel_barang', [AdminController::class, 'tabel_barang'])->name('tabel_barang');
+Route::get('/barang/create', [AdminController::class, 'create'])->name('create');
+Route::post('/barang/store', [AdminController::class, 'store'])->name('store');
+Route::get('/barang/{id_barang}/edit', [AdminController::class, 'edit'])->name('edit');
+Route::post('/barang/{id_barang}/', [AdminController::class, 'update'])->name('update');
+Route::get('/delete/{id_barang}', [AdminController::class, 'delete'])->name('delete');
 
-Route::get('/dashboard', function (){
-    return view('layouts.master');      
-});     
-// Route::get('/dashboard/barang', function (){
-//     return view('barang.tabel_barang');      
-// });     
-// Route::get('/dashboard', function (){
-//     return view('layouts.master');      
-// });     
-// Route::get('/', function (){
-//     return view('layouts.master');      
-// });     
+  
+
 
 // peminjaman 
-Route::get('/peminjaman/pinjam', [PeminjamanController::class, 'pinjam']);
-Route::post('/peminjaman/store1', [PeminjamanController::class, 'store1']);
-Route::get('/peminjaman/agreement', [PeminjamanController::class, 'agreement']);
+Route::get('/peminjaman/search', [AdminController::class, 'search'])->name('search');
+Route::get('/peminjaman/{id_barang}/pilih', [AdminController::class, 'pilih'])->name('pilih');
+Route::post('/peminjaman/{id_barang}/progres', [AdminController::class, 'progres'])->name('progres');
+Route::get('/peminjaman/agremeent', [AdminController::class, 'agreement'])->name('agreement');
+
+Route::get('/pengembalian/return', [AdminController::class, 'return'])->name('return');
+
+Route::get('/laporan', [AdminController::class, 'laporan'])->name('laporan');

@@ -15,11 +15,10 @@ return new class extends Migration
     {
         Schema::create('barang', function (Blueprint $table) {
             $table->id('id_barang');
-            $table->string('nama_barang');
+            $table->string('nama_barang')->unique();
             $table->enum('katagori',['laptop','led_tv','printer','infocus']);
             $table->integer('quantity');
             $table->string('asal_barang');
-            $table->date('waktu');
             $table->timestamps();
         });
     }

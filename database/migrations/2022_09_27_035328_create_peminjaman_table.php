@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('peminjaman', function (Blueprint $table) {
             $table->id('id_barang');
             $table->string('nama_barang');
-            $table->string('divisi');
             $table->enum('katagori',['laptop','led_tv','printer','infocus']);
             $table->integer('quantity');
             $table->timestamps();

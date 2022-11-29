@@ -11,4 +11,5 @@ class Barang extends Model
     protected $table = 'barang';
     protected $guarded = [];
     protected $primaryKey = 'id_barang';
+    protected $dates = ['created_at'];
 }
